@@ -1,0 +1,65 @@
+body {
+    background-image: linear-gradient(to right,red, yellow);
+}
+
+.game-screen {
+    height: 400px;
+    width: 400px;
+    border: solid 5px aqua ;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.result-container {
+    border: solid 3px greenyellow;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.result-screen {
+    padding-top: 20px;
+}
+
+
+.result-container-two {
+    border: solid 3px blue;
+    height: 80px;
+    width: 400px;
+    margin: auto;
+}
+
+.result-screen-two {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.p1-roundCounter {
+border: solid 1px black;
+height: 100px;
+width: 100px;
+position: absolute;
+top: 100px;
+}
+
+.p2-roundCounter {
+    border: solid 1px black;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    right: 10px
+}
+
+
+.reset {
+    
+}
