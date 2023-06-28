@@ -1,5 +1,34 @@
 body {
-    background-image: linear-gradient(to right,red, yellow);
+    background-image: url('./images/emile-alexander-ryu-chunnwork2.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    aspect-ratio: auto;
+}
+
+
+button:hover {
+cursor: pointer;
+}
+
+@keyframes imageAnimation {
+    0% {
+      background-image: url('./images/ryu hadouken.gif');
+    }
+    50% {
+      background-image: url('./images/ryu hadouken.gif');
+    }
+    100% {
+      background-image: url('./images/ryu hadouken.gif');
+    }
+  }
+
+.hadouken {
+    animation-name: hadouken;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
 }
 
 .game-screen {
@@ -11,8 +40,20 @@ body {
     margin-left: auto;
 }
 
+
+.attack-screen {
+    border: 1px solid yellow;
+    height:300px;
+    width: 300px;
+    margin: auto;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
 h1 {
     text-align: center;
+    font-family: 'SSF ABUKET', sans-serif
 }
 
 .result-container {
@@ -42,13 +83,48 @@ h1 {
     font-size: 30px;
 }
 
+
+
 .p1-roundCounter {
 border: solid 1px black;
 height: 100px;
 width: 100px;
 position: absolute;
 top: 100px;
+background-image: url('./images/ryu_ss01.jpg');
+background-size: cover;
+color: white;
 }
+
+
+.p1 {
+color: red;
+font-weight: bold;
+font-size: 20px;
+border: solid 1px black;
+background-color: white;
+height: 20px;
+width: 100px;
+position: absolute;
+top: 200px;
+text-align: center;
+}
+
+.p2 {
+color: blue;
+font-weight: bold;
+font-size: 20px;
+border: solid 1px black;
+background-color: white;
+height: 20px;
+width: 100px;
+position: absolute;
+top: 200px;
+right: 10px;
+text-align: center;
+}
+
+
 
 .p2-roundCounter {
     border: solid 1px black;
@@ -56,7 +132,10 @@ top: 100px;
     width: 100px;
     position: absolute;
     top: 100px;
-    right: 10px
+    right: 10px;
+    background-image: url('./images/chunli_ss01.jpg');
+    background-size: cover;
+    color: yellow;
 }
 
 

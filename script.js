@@ -9,6 +9,8 @@ function playerTwo() {
 //  create function that takes your input then compares it to player2 input
 
 function player_input(num) {
+  const image = document.querySelector(".hadouken");
+  console.log(image);
   x = playerTwo();
   console.log(num, x);
   // display all the result conditions of tie , win and loss
@@ -22,6 +24,7 @@ function player_input(num) {
     document.querySelector(".result-screen").innerHTML =
       "CPU chose scissors, CPU wins";
     computerScore++;
+    image.src = "./images/chunli-sfv-kicks.gif";
   } else if (num === 3 && x === 1) {
     document.querySelector(".result-screen").innerHTML =
       "CPU chose rock, CPU wins";
@@ -29,6 +32,7 @@ function player_input(num) {
   } else {
     document.querySelector(".result-screen").innerHTML = "you win!";
     myScore++;
+    image.src = "./images/ryu hadouken.gif";
   }
   roundCounter();
   rounds();
@@ -98,3 +102,37 @@ function reset() {
     document.querySelector(".result-screen").innerHTML = " ";
   }
 }
+// when I click an RPS option, the winner option's gif
+// will be displayed.
+//
+
+// after winner gif is displayed, it will disappear in 3 seconds
+// and then the default bg will be displayed again.
+
+// refer to the image element
+//const image = document.querySelector(".hadouken");
+
+// make a function to change the image source
+// function changeImage() {
+//   image.src = "./images/ryu hadouken.gif";
+// }
+
+// // control the duration
+// function showImageDuration(duration) {
+//   //changeImage();
+
+//   setTimeout(() => {
+//     changeImage();
+//   }, duration);
+// }
+
+// //call the function with the time duration specified
+
+// showImageDuration(3000); // 3000 milisesconds = 3 seconds
+
+// notes :
+//step 1 , fix p2 gif image for p2 win screen
+// step 2, add the other gif images for the other win, and tie conditions
+// step 3 , do the "set time out" inside the if else statement for your time duration
+// step 4, change font Style
+// step 5, change the rest of the asthetics
