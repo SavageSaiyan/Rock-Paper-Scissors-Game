@@ -34,15 +34,21 @@ cursor: pointer;
 .game-screen {
     height: 400px;
     width: 400px;
-    border: solid 5px aqua ;
+    /* border: solid 5px aqua ; */
     text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
 
+.tv-screen {
+    background-image: url('images/Crystal_Tv.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
 
 .attack-screen {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     height:300px;
     width: 300px;
     margin: auto;
@@ -51,19 +57,39 @@ cursor: pointer;
 }
 
 
-h1 {
+h1  {
     text-align: center;
-    font-family: 'SSF ABUKET', sans-serif
+    font-family: 'SSF4 ABUKET', sans-serif;
+    color: rgb(255, 204, 0);
+}
+
+h3 {
+    color:rgb(255, 204, 0);
+    font-size: 24px;
 }
 
 .result-container {
     border: solid 3px greenyellow;
+    
     height: 100px;
     text-align: center;
-    font-size: 40px;
+    font-family:'SSF4 ABUKET';
+    font-size: 35px;
     margin: auto;
     margin-top: 100px;
+    background-color: gold;
+    animation-name: result-container;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes result-container {
+    0% {background-color: gold;}
+    25% {background: linear-gradient(to right,red, gold);}
+    50% {background: linear-gradient(to left,red, gold);}
+    100% {background: linear-gradient(to right,red, gold);}
+}
+
 
 .result-screen {
     padding-top: 20px;
@@ -75,6 +101,11 @@ h1 {
     height: 80px;
     width: 400px;
     margin: auto;
+    background-image: url('images/street-fighter-6-ryu-chun.jpg');
+    background-size: cover;
+    background-position-y: 170px;
+    color: white;
+    font-weight: bold;
 }
 
 .result-screen-two {
@@ -90,7 +121,7 @@ border: solid 1px black;
 height: 100px;
 width: 100px;
 position: absolute;
-top: 100px;
+top: 163px;
 background-image: url('./images/ryu_ss01.jpg');
 background-size: cover;
 color: white;
@@ -106,7 +137,7 @@ background-color: white;
 height: 20px;
 width: 100px;
 position: absolute;
-top: 200px;
+top: 256px;
 text-align: center;
 }
 
@@ -119,7 +150,7 @@ background-color: white;
 height: 20px;
 width: 100px;
 position: absolute;
-top: 200px;
+top: 256px;
 right: 10px;
 text-align: center;
 }
@@ -131,7 +162,7 @@ text-align: center;
     height: 100px;
     width: 100px;
     position: absolute;
-    top: 100px;
+    top: 163px;
     right: 10px;
     background-image: url('./images/chunli_ss01.jpg');
     background-size: cover;

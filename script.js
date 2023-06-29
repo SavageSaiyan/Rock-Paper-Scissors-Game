@@ -18,22 +18,40 @@ function player_input(num) {
     document.querySelector(".result-screen").innerHTML = "tie game!";
   } else if (num === 1 && x === 2) {
     document.querySelector(".result-screen").innerHTML =
-      "CPU chose paper, CPU wins!";
+      "CPU chose Parry, CPU wins!";
     computerScore++;
+    image.src = "./images/chun-li-parry.gif";
   } else if (num === 2 && x === 3) {
     document.querySelector(".result-screen").innerHTML =
-      "CPU chose scissors, CPU wins";
+      "CPU chose Rapid kick, CPU wins";
     computerScore++;
     image.src = "./images/chunli-sfv-kicks.gif";
   } else if (num === 3 && x === 1) {
     document.querySelector(".result-screen").innerHTML =
-      "CPU chose rock, CPU wins";
+      "CPU chose blossom kick, CPU wins";
     computerScore++;
-  } else {
-    document.querySelector(".result-screen").innerHTML = "you win!";
+    image.src = "./images/chunli-street-fighter flurry attack.gif";
+  } else if (num === 1 && x === 3) {
+    document.querySelector(".result-screen").innerHTML =
+      "You chose Hadouken,You win!";
     myScore++;
     image.src = "./images/ryu hadouken.gif";
+  } else if (num === 2 && x === 1) {
+    document.querySelector(".result-screen").innerHTML =
+      "You chose Parry,You win!";
+    myScore++;
+    image.src = "./images/ryu parry.gif";
+  } else if (num === 3 && x === 2) {
+    document.querySelector(".result-screen").innerHTML =
+      "You chose Shoryuken,You win!";
+    myScore++;
+    image.src = "./images/ryu shoryuken.gif";
   }
+  // put the SetTime out here
+  setTimeout(() => {
+    image.src = "./images/chu-li-street-fighter6-vs-ryu.gif"; // Set the default image that it will return to after your time duration
+  }, 6000); // Display each image for 6 seconds
+
   roundCounter();
   rounds();
 }
@@ -108,27 +126,6 @@ function reset() {
 
 // after winner gif is displayed, it will disappear in 3 seconds
 // and then the default bg will be displayed again.
-
-// refer to the image element
-//const image = document.querySelector(".hadouken");
-
-// make a function to change the image source
-// function changeImage() {
-//   image.src = "./images/ryu hadouken.gif";
-// }
-
-// // control the duration
-// function showImageDuration(duration) {
-//   //changeImage();
-
-//   setTimeout(() => {
-//     changeImage();
-//   }, duration);
-// }
-
-// //call the function with the time duration specified
-
-// showImageDuration(3000); // 3000 milisesconds = 3 seconds
 
 // notes :
 //step 1 , fix p2 gif image for p2 win screen
