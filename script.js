@@ -133,3 +133,12 @@ function reset() {
 // step 3 , do the "set time out" inside the if else statement for your time duration
 // step 4, change font Style
 // step 5, change the rest of the asthetics
+
+
+
+// modify music 
+
+const audio = document.getElementById('myAudio');
+
+audio.muted = false; // unmute the audio
+audio.play(); // start playing the audio 
